@@ -1,31 +1,35 @@
-# Arcane Rostrum — Downloads & Updates
+# Arcane Rostrum
 
-This repository is the **download and auto-update channel** for **Arcane Rostrum**, a
-desktop companion for Dungeon Masters.
+A little desktop app I'm building to help me run my Dungeons & Dragons games — a place to
+keep my prep, my cast of characters, the mystery threads, and a battle map all in one spot,
+and then actually *use* it at the table.
 
-It contains **only signed installers and update manifests** — no source code. The
-application's source is private and proprietary.
+This is just the download page. It's an early alpha — I'm mostly tinkering with it for my own
+games, so expect rough edges and frequent changes.
 
-## Download the latest version
+## Download
 
-➡️ **[Get the latest release](https://github.com/fuchcar/arcane-rostrum-releases/releases/latest)**
+👉 **[Grab the latest version](https://github.com/fuchcar/arcane-rostrum-releases/releases/latest)**
 
-Download `arcane-rostrum_<version>_x64-setup.exe` and run it. Windows may show a
-SmartScreen prompt for a new publisher — choose **More info → Run anyway**.
+Download the `..._x64-setup.exe`, run it, and you're in. Windows might warn about an unknown
+publisher — click **More info → Run anyway**. Once it's installed it quietly checks here for
+updates and can update itself.
 
-Once installed, the app checks this page for updates automatically and can update itself
-in place.
+## What it does, roughly
 
-## Safety
+- A **prep** side for building your session and a **dashboard** for running it live
+- Keeps track of your NPCs, clues and mystery threads, scenes, and countdown "clocks"
+- A **battle map** with paintable terrain and combat tools (initiative, movement, attacks)
+- Built around 5e but tries to stay light on the rules
 
-Every installer is cryptographically **signed**. The app verifies that signature against a
-public key built into it before applying any update, so a tampered or substituted build
-cannot be installed.
+…plus a pile of smaller bits I keep adding.
 
-## License
+## Still cooking
 
-Arcane Rostrum is **proprietary software, distributed for evaluation/alpha testing only**.
-See [LICENSE](LICENSE). No rights to the source code or design are granted by downloading
-or running the application.
+Very much a work in progress — some things are half-built, some will change, and an update
+now and then might shuffle how things get saved (it makes a backup before updating, but keep
+anything important backed up too). If I've shared this with you, I'd love your feedback.
 
-© 2026 fuchcar. All rights reserved.
+---
+
+*My own hobby project. See [LICENSE](LICENSE). © 2026 fuchcar.*
