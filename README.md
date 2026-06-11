@@ -1,4 +1,4 @@
-# Arcane Rostrum
+# Phylactery
 
 A desktop (and browser) command center I'm building to **prep and run** my tabletop
 RPG sessions — one place for the cast, the mystery, the scenes, the battle map, and
