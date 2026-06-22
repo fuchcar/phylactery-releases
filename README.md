@@ -1,110 +1,52 @@
 # Phylactery
 
-A desktop (and browser) command center I'm building to **prep and run** my tabletop
-RPG sessions — one place for the cast, the mystery, the scenes, the battle map, and
-everything I need at the table. Built around D&D 5e, but kept flexible.
+**A Dungeon Master's command center for D&D 5e — prep it, then run it.** One place for the cast, the mystery, the scenes, the battle map, and everything you need at the table. Built around 5e, kept flexible.
 
-It's an early alpha — I mostly tinker with it for my own games — so expect rough edges
-and frequent updates.
+This is a **public beta (v1.0.0)** — free to download and use, genuinely deep and daily-usable, but still evolving. Expect frequent updates (it installs them itself), and your feedback shapes where it goes.
 
 ## Download
 
-➡️ **[Get the latest version](https://github.com/fuchcar/phylactery-releases/releases/latest)**
+**[Get the latest version](https://github.com/fuchcar/phylactery-releases/releases/latest)**
 
-Download the `..._x64-setup.exe`, run it, and you're in. Windows may warn about an
-unknown publisher — click **More info → Run anyway**. Once installed, it checks here for
-updates and can update itself.
+Download the `phylactery_<version>_x64-setup.exe`, run it, and you're in. Windows may warn about an **unknown publisher** ("Windows protected your PC") — click **More info → Run anyway**. It's safe: every release is cryptographically signed, and the built-in updater verifies that signature before it installs anything. Once installed, the app checks here for updates and keeps itself current.
+
+On first launch, take the **guided tour** — it builds a real, runnable fight in about a minute.
 
 ## Two modes
 
-- **✎ Prep** — build the session: your world, cast, mystery, scenes, and maps.
-- **▶ Live** — run it: a glanceable dashboard, combat, clocks, and quick rulings. Kept
-  lean on purpose, so at the table you're *playing*, not doing data entry.
+- **Prep** — build the session: your world, cast, mystery, scenes, and maps.
+- **Live** — run it: a glanceable dashboard, combat, clocks, and quick rulings. Kept lean on purpose, so at the table you're *playing*, not doing data entry.
 
-A left rail (dice roller, timers, turn order, quick notes) follows you on every screen,
-so jotting something never pulls you away from what you're doing.
+A left rail (dice roller, timers, turn order, quick notes) follows you on every screen, so jotting something never pulls you away from what you're doing.
 
 ## What it does
 
-- **Cast** — Build PCs, NPCs, and monsters. Add a character fast (one field at a time)
-  or with a step-by-step wizard that *explains every 5e choice* — ancestry, class,
-  ability scores, skills, spells — which helps a lot if you or your players are new.
-  Full stat blocks with auto-derived HP/AC/to-hit/save math, and a one-click portrait
-  **art-prompt** generator for AI image tools.
+- **Combat tracker** — the heart of the app. Initiative, HP with an undo-able damage log, conditions, concentration, and death saves (enforced by the rules). Pull a creature in and its real attacks/spells resolve — roll to-hit vs AC, advantage/disadvantage, crits, damage, range/reach enforced — with **3D dice** (or tap-to-pick the face you rolled at the table), re-roll, and *confirm-before-it-logs* so you stay in control. Concentration saves prompt themselves, timed effects count down, areas of effect preview as smooth shapes that track your cursor, and an encounter-difficulty meter reads the fight at a glance. One tap of **combat focus** hides everything but the fight.
 
-- **Compendium ("Living Grimoire")** — A built-in rules wiki that opens like a book —
-  Spells, Bestiary, Magic Items, Conditions, Rules. It's a *big* bundled reference:
-  roughly **1,000 spells, 2,150 creatures, and 1,400 magic items** drawn from the SRD and
-  other license-clean sources, all searchable and filterable by book. Right-click any
-  entry to favorite it, drop a monster into the tracker, or hand an item to the story.
+- **Cast** — build PCs, NPCs, and monsters. Add a character fast, or with a step-by-step wizard that *explains every 5e choice* — ancestry, class, ability scores, skills, spells — which helps a lot if you or your players are new. Full stat blocks with auto-derived HP/AC/to-hit/save math, and a one-click portrait **art-prompt** generator for AI image tools.
 
-- **The mystery (Case)** — A board for your leads and clues with a reveal-state tracker
-  (hidden → revealed), the facts players can uncover, world-state flags, and faction
-  standings. It nudges you toward the "three clues" rule so an investigation can't
-  dead-end.
+- **Compendium ("Living Grimoire")** — a built-in rules wiki that opens like a book — Spells, Bestiary, Magic Items, Conditions, Rules. It's a *big* bundled reference: **5,500+ entries** in all — roughly **2,300 creatures, 1,300 spells, and 1,700 magic items** drawn from the SRD and other license-clean sources, all searchable and filterable by book. Bundled monsters drop into combat ready to attack.
 
-- **Scenes** — Lay out your beats with read-aloud text, private DM cues, and linked NPCs.
+- **Battle map** — a proper tactical map editor: draw walls / rooms / doors, paint terrain, drop in your own art, or hit **Generate** for an instant dungeon, cave, forest, or town. Dynamic lighting with wall-cast shadows, **fog of war** with a separate **player-view** window for a second screen, and **turn-aware darkvision**. Run the actual fight on it with a BG3-style action bar, enforced movement, line-of-fire and a **Cover** tool.
 
-- **Battle map** — A proper tactical map editor: draw walls / rooms / doors, paint
-  terrain (grass, stone, water; difficult / hazard / cover), drop in your own art, or hit
-  **Generate** for an instant dungeon, cave, forest, or town. Dynamic lighting with
-  wall-cast shadows, **fog of war** with a separate **player-view** window for a second
-  screen, and **turn-aware darkvision** — on a Dark map the fog lights to whoever's turn
-  it is. You run the actual fight on it: a **BG3-style action bar** for the active
-  character, move tokens (with their speed enforced), aim attacks (with line-of-fire and
-  a **Cover** tool), and preview areas of effect as smooth shapes that track your cursor.
+- **The mystery (Case)** — a board for your leads and clues with a reveal-state tracker, the facts players can uncover, world-state flags, and faction standings. It nudges you toward the "three clues" rule so an investigation can't dead-end.
 
-- **Combat tracker** — Initiative order, HP with an undo-able damage log, conditions,
-  concentration, and death saves. Pull a creature in and its real attacks/spells resolve
-  — roll to-hit vs AC, crits, damage, range/reach enforced — with re-roll and
-  *confirm-before-it-logs* so you stay in control. Spell effects apply with one click
-  (buff/debuff chips + token auras), concentration saves prompt themselves, timed effects
-  count down, and an encounter-difficulty meter reads the fight at a glance. One tap of
-  **combat focus** hides everything but the fight.
+- **Clocks, Oracle, Lore & Reference** — countdown/progress clocks and timers; on-the-fly NPC and complication/rumor/quirk generators; a home for your world notes and a beginner-friendly rules helper that can build a prompt to paste into **any AI chat** for a richer NPC or a tricky ruling (no account, nothing leaves your machine).
 
-- **Clocks** — Countdown/progress clocks, real-time timers, round counters, and in-game
-  time-of-day — each with a hidden option for the ones players shouldn't see.
-
-- **Oracle** — On-the-fly generators: characterful NPCs, plus complication / rumor /
-  quirk tables for when the party goes somewhere you didn't prep.
-
-- **Lore & Reference** — A home for your world notes, and a beginner-friendly rules
-  helper ("describe the situation → get a ruling"). It can also build a prompt to paste
-  into Claude for a richer NPC or a tricky ruling — no account, nothing leaves your
-  machine.
-
-- **DM Dashboard (Live)** — An at-a-glance card: who's in play, the current scene,
-  ticking clocks, clue states, and the loose promises you improvised. One look and you're
-  oriented. The panels are customizable.
-
-- **Printable sheets** — One-page DM screen, a player quick-reference, and character
-  sheets, so the table leans on a handout instead of pausing to look things up.
-
-- **Session log** — Rolls, reveals, clue flips, and combat all log themselves; flip to
-  **★ Key** for just the story beats, and build a one-click session summary.
-
-- **Find anything (Ctrl-K)** — A quick-launcher to jump to any tab, character, clue, or
-  rules entry — or create things — without hunting through menus.
+- **DM Dashboard, printable sheets, session log, and a Ctrl-K quick-launcher** — an at-a-glance command view, one-page handouts, a self-writing log (flip to **Key** for just the story beats), and a quick-find to jump to anything or create it on the spot.
 
 ## Systems & scope
 
-Built for D&D 5e but adapts to Pathfinder 2e, OSR, PbtA, generic d20, or homebrew. Pick a
-scenario flavor (mystery, heist, dungeon, political, sandbox, horror, war) and it focuses
-the tools around it. Runs a single **one-shot** or a full **campaign** — campaigns add a
-session timeline ("Previously on…" recaps) and multi-session plot arcs.
+Built for D&D 5e but adapts to Pathfinder 2e, OSR, PbtA, generic d20, or homebrew. Pick a scenario flavor (mystery, heist, dungeon, political, sandbox, horror, war) and it focuses the tools around it. Runs a single **one-shot** or a full **campaign** — campaigns add a session timeline ("Previously on…" recaps) and multi-session plot arcs.
 
 ## Offline & yours
 
-No account, no internet required, no tracking. Everything saves locally — the desktop app
-auto-saves to a real file on your machine and keeps **dated daily backups** you can
-restore from. Updates download from this page automatically.
+No account, no internet required, no tracking. Everything saves locally — the desktop app auto-saves to a real file on your machine and keeps **dated daily backups** you can restore from. Updates download from this page automatically.
 
-## Still cooking
+## Feedback
 
-Very much a work in progress — some things are half-built, some will change. It makes a
-backup before updating, but keep anything important backed up too. If I've shared this
-with you, I'd genuinely love your feedback.
+It's a public beta, and reports shape it. Please **[open an issue](https://github.com/fuchcar/phylactery-releases/issues)** — tell us what broke, what felt off, and what you'd want next.
 
----
+## License & source
 
-*My own hobby project. See [LICENSE](LICENSE). © 2026 fuchcar.*
+The **app is free to download and use.** The **source code is proprietary — © 2026, all rights reserved — and is *not* open or publicly available.** This repository hosts only the signed installers and the auto-update manifest; no source is published here or anywhere. See [LICENSE](LICENSE).
